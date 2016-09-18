@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="?attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="53dp"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.like.LikeButton
+                android:id="@+id/btnLike"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                app:icon_size="24dp"
+                app:anim_scale_factor="3"
+                app:icon_type="heart"
+                app:like_drawable="@drawable/ic_love_on"
+                app:unlike_drawable="@drawable/ic_love"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Bài hát"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/tvSong" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Ca sĩ"
+                android:id="@+id/tvArtist" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/btnAction">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Chất lượng"
+                android:padding="2dp"
+                android:textSize="9sp"
+                android:includeFontPadding="false"
+                android:background="@drawable/textview_bitrate"
+                android:id="@+id/tvBitrate" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_button_more"
+                android:text=">" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/gray"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FastScrollRecyclerView"><attr format="reference|color" name="fastScrollThumbColor"/><attr format="reference|color" name="fastScrollTrackColor"/><attr format="reference|color" name="fastScrollPopupBgColor"/><attr format="reference|color" name="fastScrollPopupTextColor"/><attr format="reference|boolean" name="fastScrollAutoHide"/><attr format="reference|integer" name="fastScrollAutoHideDelay"/></declare-styleable>
+</resources>

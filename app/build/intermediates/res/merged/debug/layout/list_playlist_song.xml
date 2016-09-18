@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:layout_marginRight="5dp"
+            android:id="@+id/viewActive" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nếu không có anh ta"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_while"
+                android:id="@+id/tvSongTitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_while"
+                android:text="Khánh phương"
+                android:textSize="13sp"
+                android:id="@+id/tvArtist" />
+        </LinearLayout>
+
+        d<LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_delete"
+                android:background="@null"
+                android:text="New Button"
+                android:padding="5dp"
+                android:id="@+id/btnDelete" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

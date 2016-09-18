@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/tit"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--  <include
+              layout="@layout/toolbar"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" />-->
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar" >
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/current_play_bar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/current_play_bar_background">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_marginRight="5dp"
+                android:padding="5dp">
+                <ImageView
+                    android:layout_width="45dp"
+                    android:scaleType="centerCrop"
+                    android:layout_height="45dp"
+                    android:id="@+id/imgAlbumArt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvSongTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medium Text"
+                    android:textStyle="bold"
+                    android:singleLine="true"
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:id="@+id/tvArtist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medium Text"
+                    android:singleLine="true"
+                    android:textSize="@dimen/tabbar_text_size"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnTogglePlay"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/ic_noti_play"/>
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/ic_noti_next"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

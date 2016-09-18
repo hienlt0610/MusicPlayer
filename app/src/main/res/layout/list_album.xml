@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgAlbumArt"
+        android:src="@drawable/adele"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="www.chiasenhac.com"
+            android:textSize="15sp"
+            android:textColor="@color/text_while"
+            android:id="@+id/tvAlbum" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khánh phương"
+            android:textColor="@color/text_while"
+            android:textSize="12sp"
+            android:id="@+id/tvArtist" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0 bài hát)"
+            android:textColor="@color/text_while"
+            android:textSize="11sp"
+            android:id="@+id/tvSongNums" />
+    </LinearLayout>
+</LinearLayout>

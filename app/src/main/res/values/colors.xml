@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_while">#fff</color>
+    <color name="text_black">#000</color>
+    <color name="black_transparent_light">#99000000</color>
+    <color name="black_transparent_dark">#B3000000</color>
+    <color name="best_bitrate_color">#66FF66</color>
+    <color name="gray">#BFBFBF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="toolbar_transparent">#33000000</color>
+    <color name="tabtrip_background">#26000000</color>
+    <color name="pager_background">#4D000000</color>
+    <color name="recyclerView_background">#4D000000</color>
+    <color name="current_play_bar_background">#99FFFFFF</color>
+    <color name="dialog_background">#CC000000</color>
+    <color name="line_color">#4DFFFFFF</color>
+
+</resources>

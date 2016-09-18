@@ -1,0 +1,225 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.HomeFragment">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/grid_margin">
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_span="2"
+                android:layout_weight="1"
+                android:background="@drawable/home_button_selector"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:id="@+id/btnMusicInDevice">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_button_local_music" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/all_local_music"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_while" />
+
+                    <TextView
+                        android:id="@+id/tvSongNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100 bài hát"
+                        android:textColor="@color/text_while"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quét"
+                    android:id="@+id/btnScan" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Row 2 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/grid_margin">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:padding="12dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:background="@drawable/home_button_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:id="@+id/btnMusicLike">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_button_like" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/song_like"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/text_while"
+                    android:id="@+id/textView4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/home_button_selector"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginLeft="@dimen/grid_margin"
+                android:id="@+id/btnPlaylist">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_button_playlist" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/playlist"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/text_while"
+                    android:id="@+id/textView4" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <!-- Row 3 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/grid_margin">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/home_button_selector"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:id="@+id/btnFolder">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_button_folder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/folder"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/text_while"
+                    android:id="@+id/textView4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/home_button_selector"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginLeft="@dimen/grid_margin"
+                android:id="@+id/btnRecent">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_button_recent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recently_list"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/text_while"
+                    android:id="@+id/textView4" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

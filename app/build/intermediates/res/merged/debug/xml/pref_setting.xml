@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:key="auto_download_lyric" android:title="Cho phép tự động tải lời bài hát"></CheckBoxPreference>
+</PreferenceScreen>
