@@ -43,6 +43,7 @@ public class BackgroundActivity extends HLBaseActivity implements ItemClickSuppo
         imgBackground = (ImageView) findViewById(R.id.imgBackground);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         //Test
+        //Test2
         setBackground(false);
         initListBackground();
 
