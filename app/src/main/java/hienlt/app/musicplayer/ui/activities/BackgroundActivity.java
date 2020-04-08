@@ -44,7 +44,7 @@ public class BackgroundActivity extends HLBaseActivity implements ItemClickSuppo
         recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
         //Test
         //Test2
-        setBackground(false);
+        setBackground(true);
         initListBackground();
 
         //Get current background
