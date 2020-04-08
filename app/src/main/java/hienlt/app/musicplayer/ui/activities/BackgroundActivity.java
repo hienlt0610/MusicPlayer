@@ -42,17 +42,17 @@ public class BackgroundActivity extends HLBaseActivity implements ItemClickSuppo
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         imgBackground = (ImageView) findViewById(R.id.imgBackground);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
-
+        //Test
         setBackground(false);
         initListBackground();
 
         //Get current background
         boolean isDefaultBkg = Settings.getInstance().get(Common.DEFAULT_BACKGROUND, false);
         BackgroundImage currBackground = new BackgroundImage();
-        if(isDefaultBkg){
-            int bkgID = Settings.getInstance().get(Common.BACKGROUND_ID,0);
+        if (isDefaultBkg) {
+            int bkgID = Settings.getInstance().get(Common.BACKGROUND_ID, 0);
             currBackground.setId(bkgID);
-        }else{
+        } else {
             String path = Settings.getInstance().get(Common.MY_BACKGROUND, null);
             currBackground.setPath(path);
         }
