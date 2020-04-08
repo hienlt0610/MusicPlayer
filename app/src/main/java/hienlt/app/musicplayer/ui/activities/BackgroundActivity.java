@@ -50,10 +50,10 @@ public class BackgroundActivity extends HLBaseActivity implements ItemClickSuppo
         //Get current background
         boolean isDefaultBkg = Settings.getInstance().get(Common.DEFAULT_BACKGROUND, false);
         BackgroundImage currBackground = new BackgroundImage();
-        if (isDefaultBkg) {
-            int bkgID = Settings.getInstance().get(Common.BACKGROUND_ID, 0);
+        if(isDefaultBkg){
+            int bkgID = Settings.getInstance().get(Common.BACKGROUND_ID,0);
             currBackground.setId(bkgID);
-        } else {
+        }else{
             String path = Settings.getInstance().get(Common.MY_BACKGROUND, null);
             currBackground.setPath(path);
         }
